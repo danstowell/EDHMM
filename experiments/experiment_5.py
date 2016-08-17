@@ -1,5 +1,9 @@
 # This experiment runs the forward backward algorithm on experiment 1's data 
 
+import pylab as pb
+import numpy as np
+import logging
+
 import sys
 sys.path.append('..')
 
@@ -8,10 +12,6 @@ from duration import Poisson
 from transition import Transition
 from initial import Initial
 from edhmm import EDHMM
-
-import pylab as pb
-import numpy as np
-import logging
 
 
 logging.basicConfig(

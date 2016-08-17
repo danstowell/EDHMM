@@ -4,6 +4,11 @@ in a situation where we'd expect it to succeed. Tail experiment_1.log to watch t
 of the algorithm as it runs.
 """
 
+import pylab as pb
+import numpy as np
+import logging
+import sys
+
 import sys
 sys.path.append('..')
 
@@ -12,11 +17,6 @@ from duration import Poisson
 from transition import Transition
 from initial import Initial
 from edhmm import EDHMM
-
-import pylab as pb
-import numpy as np
-import logging
-import sys
 
 logging.basicConfig(
     filename="experiment_1.log", 

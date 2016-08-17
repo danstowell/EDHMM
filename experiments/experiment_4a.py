@@ -3,6 +3,11 @@ This experiment is to provide a counterpoint to the main experiment 4. This allo
 to run with the sampler fully in place, to see how it does compared to the forward backward algo.
 """
 
+import pylab as pb
+import numpy as np
+import logging
+import sys
+
 import sys
 sys.path.append('..')
 
@@ -11,11 +16,6 @@ from duration import Poisson
 from transition import Transition
 from initial import Initial
 from edhmm import EDHMM
-
-import pylab as pb
-import numpy as np
-import logging
-import sys
 
 logging.basicConfig(
     filename="experiment_4.log", 
